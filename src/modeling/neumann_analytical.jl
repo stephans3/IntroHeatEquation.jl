@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.15
+# v0.14.2
 
 using Markdown
 using InteractiveUtils
@@ -196,7 +196,7 @@ because of the orthonormal property $\langle \Phi_{i}, \Phi_{i} \rangle = 1$.
 
 Now, an example initial data is assumed with $\quad \vartheta_{0}(x) := m \left[ L~x - x^2 \right] \quad$ with  $m > 0$.
 
-This iniial data leads to the coefficients
+This initial data leads to the coefficients
 
 $C_{i} ~=~ \sqrt{\frac{2}{L}}  ~ (-1) ~ m ~ L ~ \left(\frac{L}{i \pi}\right)^2 \left[\left(-1\right)^{i} + 1 \right] ~=~
 \begin{cases}

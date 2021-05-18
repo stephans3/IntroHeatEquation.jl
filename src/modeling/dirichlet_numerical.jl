@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.15
+# v0.14.1
 
 using Markdown
 using InteractiveUtils
@@ -230,38 +230,41 @@ md"### Code: Solving the ODE"
 # Solving the ODE
 let
 	prob = ODEProblem( heat_eq, θ₀, tspan ) # ODE Problem
-	sol = solve(prob,Euler(),dt=Δt,progress=true, save_everystep=false, save_start=true) # Solving the ODE
+	
+	sol = solve(prob,Euler(),dt=Δt,progress=true, save_everystep=false, 
+				save_start=true) # Solving the ODE
+	
 	plot(xspan, sol.u[2], xlabel = "Position x", ylabel="Temperature", legend=false)
 end
 
 # ╔═╡ Cell order:
-# ╠═baed3ace-34ad-11eb-0cf6-19357238b1de
-# ╠═8f5d25dc-34ae-11eb-2aa7-39e601f648a1
+# ╟─baed3ace-34ad-11eb-0cf6-19357238b1de
+# ╟─8f5d25dc-34ae-11eb-2aa7-39e601f648a1
 # ╠═8f493cca-34ae-11eb-3e60-31ab68674568
 # ╠═8f149f6a-34ae-11eb-01f2-5983e256a7de
 # ╠═8efa0286-34ae-11eb-1952-e790d141e19b
 # ╠═8ecb6bba-34ae-11eb-2c16-819675412725
 # ╠═e6433430-34af-11eb-318d-2199461e5ec9
-# ╠═37c91fae-34b0-11eb-0f82-639173602ac0
+# ╟─37c91fae-34b0-11eb-0f82-639173602ac0
 # ╠═37b018c4-34b0-11eb-234d-4fbeaa683873
 # ╠═65049b1a-3549-11eb-33ee-9dfae609164d
 # ╠═a36fd440-3549-11eb-0e93-0d36244400ef
 # ╠═c18a976a-3549-11eb-2991-799f558e4493
 # ╠═d7d5be46-3549-11eb-3a12-afab5ab4bce5
 # ╠═045066e2-354a-11eb-164b-09fc7095de47
-# ╠═37822ec8-34b0-11eb-175d-7745382c2955
+# ╟─37822ec8-34b0-11eb-175d-7745382c2955
 # ╠═3768b7e0-34b0-11eb-0772-f5f4c95cf8f5
 # ╠═37529500-34b0-11eb-1ee4-b5837bea23c9
-# ╠═373652f0-34b0-11eb-2fea-4f14b3ee9140
+# ╟─373652f0-34b0-11eb-2fea-4f14b3ee9140
 # ╠═371c6d52-34b0-11eb-12ab-a51e10fe33c5
-# ╠═37013e12-34b0-11eb-3d23-9d43ca3f06a3
+# ╟─37013e12-34b0-11eb-3d23-9d43ca3f06a3
 # ╠═78b7fa20-354c-11eb-3754-d5d515d0a2d5
 # ╠═77906a42-354c-11eb-397e-9dca847ab964
 # ╠═93696cf4-354d-11eb-0af3-9b27a8186fbd
 # ╠═a91c8b80-354d-11eb-03ec-8f4386a69708
 # ╠═86f0f21c-354d-11eb-2a32-299183f9118b
 # ╠═666a8878-354d-11eb-22dc-e94a72ede22d
-# ╠═cfc0e592-354d-11eb-2b06-458d198c38e5
+# ╟─cfc0e592-354d-11eb-2b06-458d198c38e5
 # ╠═25789968-3552-11eb-1e25-35c0d1b1c461
 # ╠═56daee6e-3554-11eb-37cd-49ad4ac56805
 # ╠═56bb225a-3554-11eb-0062-6d03b8ea772f
