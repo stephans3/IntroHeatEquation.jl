@@ -30,3 +30,6 @@ Simple control approaches for the discretized heat equation are presented here.
 2. Add Pluto.jl to your Julia environment
 3. Start a Pluto session
 4. Insert the link of simulation scripts from this repository in the Pluto session, see the textbox "Open from file" 
+
+
+Please note: This is work in progress.
