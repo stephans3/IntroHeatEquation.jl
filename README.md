@@ -15,7 +15,7 @@ The free (uncontrolled) heat equation models with various boundary condidtions (
 - zero Neumann: insulated sides / no flux towards environment
   - [analytical](https://github.com/stephans3/IntroHeatEquation.jl/blob/main/src/modeling/neumann_analytical.jl) and 
   - [numerical](https://github.com/stephans3/IntroHeatEquation.jl/blob/main/src/modeling/neumann_numerical.jl) solution
-- Robin: heat transfer and heat radiation towards enviroment (nonlinear BC) 
+- Nonlinear: heat transfer and heat radiation towards environment 
   - [numerical](https://github.com/stephans3/IntroHeatEquation.jl/blob/main/src/modeling/robin_numerical.jl) solution
 
 ### Control
